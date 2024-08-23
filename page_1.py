@@ -70,7 +70,7 @@ if include_intern_experience:
             company_name = st.text_input(f"Company {i + 1}", key=f"Company_intern {i + 1}")
             months = st.text_input(f"Total Months {i + 1}", key =f"months_intern {i + 1}")
             details_int = st.text_area(f"Details {i + 1} (Separate by newline)", key=f"Details_intern {i + 1}")
-            details_int = details.split("\n")
+            details_int = details_int.split("\n")
             internships.append({
                 "designation": designation,
                 "company_name": company_name,
