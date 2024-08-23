@@ -1,7 +1,6 @@
 import streamlit as st
 from jinja2 import Template
 import pandas as pd
-import fitz
 from io import BytesIO
 
 # Function to generate resume
