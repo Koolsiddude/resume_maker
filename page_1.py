@@ -75,7 +75,7 @@ if include_intern_experience:
                 "designation": designation,
                 "company_name": company_name,
                 "months": months,
-                "details": details
+                "details": details_int
             })
 
 # Skills
