@@ -35,7 +35,7 @@ if include_work_experience:
             designation = st.text_input(f"Position {i + 1}", key=f"Position {i + 1}")
             company_name = st.text_input(f"Company {i + 1}", key=f"Company {i + 1}")
             years = st.text_input(f"Total Years (Mar’24 - Jun’24) (or 'Present')", key =f"years {i + 1}")
-            details = st.text_area(f"Responsibilities {i + 1} (Separate by newline)")
+            details = st.text_area(f"Responsibilities {i + 1} (Separate by commas)")
             work_experience.append({
                 "designation": designation,
                 "company_name": company_name,
@@ -72,7 +72,7 @@ if include_intern_experience:
             designation = st.text_input(f"Position {i + 1}", key=f"Position_intern{i + 1}")
             company_name = st.text_input(f"Company {i + 1}", key=f"Company_intern {i + 1}")
             months = st.text_input(f"Total Months (Mar’24 - Jun’24)", key =f"months_intern {i + 1}")
-            details_int = st.text_area(f"Details {i + 1} (Separate by newline)", key=f"Details_intern {i + 1}")
+            details_int = st.text_area(f"Details {i + 1} (Separate by commas)", key=f"Details_intern {i + 1}")
             internships.append({
                 "designation": designation,
                 "company_name": company_name,
