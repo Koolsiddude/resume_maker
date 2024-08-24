@@ -138,10 +138,8 @@ if include_pos:
     for i in range(num_pos):
         with st.expander(f"Responsibility {i + 1}"):
             pos_name = st.text_input(f"Title {i + 1}",key=f"pos_name {i + 1}")
-            pos_description = st.text_area(f"Resposibility_description{i + 1}",key=f"pos_description {i + 1}")
             pos.append({
                 "name": pos_name,
-                "description": pos_description,
                 "num": num_pos
             })
 
