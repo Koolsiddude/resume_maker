@@ -21,8 +21,8 @@ email = st.text_input("Email", key="Email")
 phone = st.text_input("Phone", key="Phone")
 linkedin = st.text_input("LinkedIn URL", key="LinkedIn URL")
 # Profile Summary
-st.header("Profile Summary")
-profile = st.text_area("Profile Summary")
+st.header("Career Objective/Profile Summary")
+profile = st.text_area()
 
 # Work Experience
 include_work_experience = st.checkbox("Include Work Experience")
