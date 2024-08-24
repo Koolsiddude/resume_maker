@@ -22,7 +22,7 @@ phone = st.text_input("Phone", key="Phone")
 linkedin = st.text_input("LinkedIn URL", key="LinkedIn URL")
 # Profile Summary
 st.header("Career Objective/Profile Summary")
-profile = st.text_area()
+profile = st.text_area(" ")
 
 # Work Experience
 include_work_experience = st.checkbox("Include Work Experience")
