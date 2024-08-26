@@ -307,7 +307,7 @@ template_input_all = """
   <body>
     <div class="container">
       <div class="header">
-        <img src="./vbs-logo-removebg-preview.png" alt="Institution Logo" style="float: right;bottom: 20vh; margin-left: 10px; width: 25vh; height: auto;"></img>
+        <img src="vbs-logo-removebg-preview.png" alt="Institution Logo" style="float: right;bottom: 20vh; margin-left: 10px; width: 25vh; height: auto;"></img>
         <h1>{{name}}</h1>
         <p>
           Email:
@@ -677,7 +677,7 @@ template_input_exclude_work_exp = """
   <body>
     <div class="container">
       <div class="header">
-        <img src="./vbs-logo-removebg-preview.png" alt="Institution Logo" style="float: right;bottom: 20vh; margin-left: 10px; width: 25vh; height: auto;"></img>
+        <img src="vbs-logo-removebg-preview.png" alt="Institution Logo" style="float: right;bottom: 20vh; margin-left: 10px; width: 25vh; height: auto;"></img>
         <h1>{{name}}</h1>
         <p>
           Email:
