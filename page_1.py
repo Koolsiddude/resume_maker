@@ -564,7 +564,7 @@ if include_intern_experience:
             })
     context["internships"] = internships
 
-st.markdown('<h1 style="color: pink; font-size: 3.4vh;">Co-Curricular & Extra-Curricular Activities 🛠️</h1>', unsafe_allow_html=True)
+st.markdown('<h1 style="color: pink; font-size: 3.3vh;">Co-Curricular & Extra-Curricular Activities 🛠️</h1>', unsafe_allow_html=True)
 
 # Certifications
 include_certificate = st.checkbox("Include Certifications 📜")
