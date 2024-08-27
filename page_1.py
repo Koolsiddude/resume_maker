@@ -887,8 +887,8 @@ if st.button("Generate Resume"):
             rain(
             emoji="🎈",
             font_size=54,
-            falling_speed=7,
-            animation_length="20 sec",
+            falling_speed=5,
+            animation_length=2,
             )
             
     else:
