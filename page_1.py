@@ -30,7 +30,7 @@ def generate_template(params):
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 10px;
-        font-size: 10px;
+        font-size: 12px;
       }
 
       @media print {
@@ -55,7 +55,7 @@ def generate_template(params):
 
         th, td {
             border: 1px solid black;
-            padding: 10 px;
+            padding: 12 px;
             text-align: left;
             vertical-align: middle;
         }
