@@ -94,7 +94,6 @@ def generate_template(params):
 
       .header p {
         margin: 0;
-        padding-left: 25px;
       }
       
       .work-exp-header th,
