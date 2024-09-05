@@ -622,15 +622,15 @@ def generate_template(params):
         <th id="comp_name" colspan="1"> Achievements & Rewards</th>
         <td id="des" colspan="4">
           <table class="live-project">
-            {% for anr in anr %}
             <td>
+            {% for anr in anr %}
               {% set ar_description = anr.description %}
               {% set sentences_anr = ar_description.split(";") %}
               {% for sentence_ar in sentences_anr %}
               &bull; {{ sentence_ar }}<br>
               {% endfor %}
-            </td>
             {% endfor %}
+            </td>
           </table>
         </td>
       </tr>
