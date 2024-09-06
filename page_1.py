@@ -619,7 +619,7 @@ def generate_template(params):
    if "include_ar" in params:
      template += """
       <tr class="live-project">
-        <th id="comp_name" colspan="1"> Achievements & Rewards</th>
+        <th id="comp_name" colspan="1"> Achievements & Awards</th>
         <td id="des" colspan="4">
           <table class="live-project">
             <td>
@@ -883,12 +883,12 @@ if include_sc:
             })
     context["scholarships"] = sc
 
-include_ar = st.checkbox("Include Achievements & Rewards 📇")
+include_ar = st.checkbox("Include Achievements & Awards 📇")
 if include_ar:
-    st.markdown('<h1 style="color: pink; font-size: 3vh;">Achievements & Rewards 📇</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 style="color: pink; font-size: 3vh;">Achievements & Awards 📇</h1>', unsafe_allow_html=True)
     ar = []
     selected_params.append("include_ar")
-    ar_description = st.text_area(f"Title (Separate by semi-colon ' ; ')", key=f"ar_title", placeholder="Description about your Achievements and Rewards")
+    ar_description = st.text_area(f"Title (Separate by semi-colon ' ; ')", key=f"ar_title", placeholder="Description about your Achievements and Awards")
     ar.append({
                     "description": ar_description
                 })
