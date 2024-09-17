@@ -408,17 +408,24 @@ def generate_template(params):
           <tr class="work-exp-header">
           <th class="comp_name" colspan="2">{{work_exp.company_name}}</th>
           <th class="des" colspan="3">{{work_exp.designation}}</th>
+          <tr class="title-work-new">
+          <th class="title-work-new" colspan="5">Work Experience</th>
           </tr>
+          {% for work_exp in work_experience %}
+          <tr class="work-exp-header">
+          <th class="comp_name" colspan="2">{{work_exp.company_name}}</th>
+          <th class="des" colspan="3">{{work_exp.designation}}</th>
+          </tr>
+          <tr class="work-exp-data">
+          <td colspan="2">{{work_exp.years}}</td>
+          <td colspan="3">
           {% set details_work = work_exp.details %}
           {% set sentences_work = details_work.split(";") %}
           {% for sentence_work in sentences_work %}
-          <tr class="work-exp-data">
-          {% if loop.first %}
-          <td rowspan="{{ sentences_work|length }}" colspan="2">{{work_exp.years}}</td>
-          {% endif %}
-          <td colspan="3">&bull; {{sentence_work}}</td>
-          </tr>
+          &bull; {{sentence_work}}<br>
           {% endfor %}
+          </td>
+          </tr>
           {% endfor %}
           </table>
           </div>
@@ -439,16 +446,17 @@ def generate_template(params):
           <th class="comp_name" colspan="2">{{intern.company_name}}</th>
           <th class="des" colspan="3">{{intern.designation}}</th>
           </tr>
+          
+          <tr class="work-exp-data">
+          <td colspan="2">{{intern.months}}</td>
+          <td colspan="3"> 
           {% set details = intern.details %}
           {% set sentences = details.split(";") %}
           {% for sentence in sentences %}
-          <tr class="work-exp-data">
-          {% if loop.first %}
-          <td rowspan="{{ sentences|length }}" colspan="2">{{intern.months}}</td>
-          {% endif %}
-          <td colspan="3"> &bull; {{sentence}}</td>
-          </tr>
+          &bull; {{sentence}}<br>
           {% endfor %}
+          </td>
+          </tr>
           {% endfor %}
           </table>
           </div>
