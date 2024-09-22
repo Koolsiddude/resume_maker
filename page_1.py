@@ -411,7 +411,6 @@ def generate_template(params):
           <tr class="title-work-new">
           <th class="title-work-new" colspan="5">Work Experience</th>
           </tr>
-          {% for work_exp in work_experience %}
           <tr class="work-exp-header">
           <th class="comp_name" colspan="2">{{work_exp.company_name}}</th>
           <th class="des" colspan="3">{{work_exp.designation}}</th>
