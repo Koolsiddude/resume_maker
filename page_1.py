@@ -402,13 +402,7 @@ def generate_template(params):
           <col style="width: 10%;">
           </colgroup>
           <tr class="title-work-new">
-          <th class="title-work-new" colspan="5">Work Experience</th>
-          </tr>
           {% for work_exp in work_experience %}
-          <tr class="work-exp-header">
-          <th class="comp_name" colspan="2">{{work_exp.company_name}}</th>
-          <th class="des" colspan="3">{{work_exp.designation}}</th>
-          <tr class="title-work-new">
           <th class="title-work-new" colspan="5">Work Experience</th>
           </tr>
           <tr class="work-exp-header">
@@ -428,7 +422,6 @@ def generate_template(params):
           {% endfor %}
           </table>
           </div>
-
           <div class="section-internship">
           <table>
           <colgroup>
@@ -445,7 +438,6 @@ def generate_template(params):
           <th class="comp_name" colspan="2">{{intern.company_name}}</th>
           <th class="des" colspan="3">{{intern.designation}}</th>
           </tr>
-          
           <tr class="work-exp-data">
           <td colspan="2">{{intern.months}}</td>
           <td colspan="3"> 
@@ -459,7 +451,6 @@ def generate_template(params):
           {% endfor %}
           </table>
           </div>
-
           <div class="section-extra_activities">
           <table>
           <tr class="title-work-new">
