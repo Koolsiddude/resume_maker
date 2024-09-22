@@ -660,11 +660,12 @@ def generate_template(params):
       </tr>
     </thead>
   </table>
-</div>
-</div>
-</body>
-</html>
-"""
+  <div class="section-academic-achievements"></div>
+  </div>
+  </div>
+  </body>
+  </html>
+  """
    return template
  
 # Streamlit interface
