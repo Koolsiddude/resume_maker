@@ -850,7 +850,7 @@ if include_acad_proj:
     for i in range(num_acad_proj):
         with st.expander(f"Academic Project {i + 1}"):
             acad_proj_name = st.text_input(f"Title",key=f"acad_proj_description_title {i + 1}")
-            acad_proj_description = st.text_area(f"Description",key=f"acad_proj_description {i + 1}")
+            acad_proj_description = st.text_area(f"Description (Separate by semi-colon ' ; ')",key=f"acad_proj_description {i + 1}")
             acad_proj.append({
                 "name": acad_proj_name,
                 "description": acad_proj_description,
@@ -868,7 +868,7 @@ if include_soc_proj:
     for i in range(num_soc_proj):
         with st.expander(f"Social Project {i + 1}"):
             soc_proj_name = st.text_input(f"Title",key=f"soc_proj_description_title {i + 1}")
-            soc_proj_description = st.text_area(f"Description",key=f"soc_proj_description {i + 1}")
+            soc_proj_description = st.text_area(f"Description (Separate by semi-colon ' ; ')",key=f"soc_proj_description {i + 1}")
             soc_proj.append({
                 "name": soc_proj_name,
                 "description": soc_proj_description,
