@@ -586,7 +586,7 @@ def generate_template(params):
                   <tr>
                     <td class="skills-container">
                       {% for sk in skills %}
-                      <span class="skill-item">&bull; {{ sk.name }}</span>
+                      <tr>&bull; {{ sk.name }}<tr>
                       {% endfor %}
                     </td>
                   </tr>
