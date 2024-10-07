@@ -480,6 +480,7 @@ def generate_template(params):
                   """ 
    if "include_certificate" in params:
        template += """
+           <table>
             <tr class="live-project">
               <th id="comp_name" colspan="1">Certifications</th>
               <td id="des" colspan="4">
