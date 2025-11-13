@@ -9,7 +9,7 @@ from streamlit_extras.let_it_rain import rain
 # Set the page configuration
 st.set_page_config(
     page_title="ResumeBuilder.io",  # Tab title
-    page_icon=":book:",            # Tab icon (emoji or URL to an image)                # Use wide mode
+    page_icon="📖",            # Tab icon (emoji or URL to an image)                # Use wide mode
 )
 
 # Function to generate resume
@@ -985,4 +985,5 @@ if st.button("Generate Resume"):
 
     else:
         st.write("Error in generating Resume")
+
 
